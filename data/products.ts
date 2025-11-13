@@ -2,42 +2,50 @@
 export type Product = {
   id: string;
   name: string;
-  purity: string;
+  category: string;
   weight: string;
-  priceUSD: number;
-  image: string;
-  inStock: boolean;
+  purity: string;
+  description: string;
+  suitableFor: string;
+  packaging: string;
+  settlement: string;
 };
 
 export const products: Product[] = [
   {
-    id: 'gm-1oz-1',
-    name: 'Gold Bar 1 oz',
-    purity: '999.9',
-    weight: '1 oz',
-    priceUSD: 2420,
-    image:
-      'https://images.unsplash.com/photo-1610375461246-83df859dfe49?q=80&w=1200&auto=format&fit=crop',
-    inStock: true,
+    id: "1kg-bar",
+    name: "1 kg Gold Bar",
+    category: "Investment Bar",
+    weight: "1 kg",
+    purity: "995–999.9 fine gold",
+    description:
+      "Institutional-standard bar suitable for primary allocations and vault-to-vault transfers.",
+    suitableFor: "Dealers, family offices, long-term allocators",
+    packaging: "Sealed, serialized bar with certificate where applicable",
+    settlement: "Typically 24–72 hours depending on location",
   },
   {
-    id: 'gm-10g-1',
-    name: 'Gold Bar 10 g',
-    purity: '999.9',
-    weight: '10 g',
-    priceUSD: 780,
-    image:
-      'https://images.unsplash.com/photo-1602173991319-230e4d8d6e9b?q=80&w=1200&auto=format&fit=crop',
-    inStock: true,
+    id: "500g-bar",
+    name: "500 g Gold Bar",
+    category: "Investment Bar",
+    weight: "500 g",
+    purity: "995–999.9 fine gold",
+    description:
+      "Flexible bar size for portfolio adjustments and scaling in or out of positions.",
+    suitableFor: "Dealers, professional investors, private clients",
+    packaging: "Individual tamper-evident packaging",
+    settlement: "24–72 hours",
   },
   {
-    id: 'gm-100g-1',
-    name: 'Gold Bar 100 g',
-    purity: '999.9',
-    weight: '100 g',
-    priceUSD: 7800,
-    image:
-      'https://images.unsplash.com/photo-1622372738942-7b5f0a3d2b1e?q=80&w=1200&auto=format&fit=crop',
-    inStock: false,
+    id: "100g-bar",
+    name: "100 g Gold Bar",
+    category: "Retail & Private Client",
+    weight: "100 g",
+    purity: "995–999.9 fine gold",
+    description:
+      "Popular bar size for private clients and introductory allocations into physical gold.",
+    suitableFor: "Private clients, gifting, starter allocations",
+    packaging: "Blister pack with assay card",
+    settlement: "24–72 hours",
   },
 ];
